@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Dashboard</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Light grey background color */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .content {
+            background-color: #ffffff; /* White background for content */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Welcome to the Flask Dashboard</h1>
+        <p>This is a basic Flask application with a styled background and an image.</p>
+        <img src="{{ url_for('static', filename='flask_logo.png') }}" alt="Flask Logo">
+    </div>
+</body>
+</html>
